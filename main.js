@@ -6,3 +6,7 @@ window.addEventListener('scroll', () => {
     item.setAttribute("class", "box");
     container.appendChild(item);
   }
+  if (scrollTop + clientHeight === scrollHeight) {
+      addBox();
+    }
+  })
